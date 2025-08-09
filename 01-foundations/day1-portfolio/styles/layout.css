@@ -51,8 +51,10 @@ footer {
 header {
     position: sticky;
     top: 0;
-    background: #fff;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: saturate(180%) blur(8px);
     border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
     z-index: 1000;
 }
 
@@ -61,6 +63,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto; padding: 0.75rem 1.25rem;
 }
 
 /* Skip link for a11y */
@@ -85,7 +88,7 @@ header {
 /* Focus visibility */
 a:focus-visible,
 button:focus-visible {
-    outline: 2px solid #1976d2;
+    outline: 2px solid #1976d2; 
     outline-offset: 2px;
 }
 
@@ -97,4 +100,14 @@ button:focus-visible {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
+}
+
+#contact {
+    text-align: center;
+}
+
+#about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
 }
